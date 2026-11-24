@@ -78,11 +78,3 @@ I build **open, extensible, and local-first software systems** that remain under
 * **Email:** `lucianle.architect@gmail.com`
 
 ```
-
-<ElicitationsGroup message="File README.md đã nằm gọn trên DESKTOP-D9EMEKK, bạn muốn đẩy lên GitHub ngay không?">
-  <Elicitation label="Khởi tạo & push Profile README" query="Hãy khởi tạo git repo tại C:\Users\ADMIN\Documents\GitHub\lucianle-architect và push file README.md lên GitHub qua SSH."/>
-  <Elicitation label="Tạo repo cho OMNIA Control Center" query="Hãy hướng dẫn tôi tạo repository cho dự án OMNIA và cấu hình .gitignore chuẩn cho Python, Node.js và SQLite WAL."/>
-  <Elicitation label="Hoàn thiện hồ sơ LinkedIn" query="Hãy viết lại phần Headline, About và Experience chuẩn tiếng Anh cho Lucian Le để dán lên LinkedIn."/>
-</ElicitationsGroup>
-
-```
