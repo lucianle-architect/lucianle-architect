@@ -1,78 +1,63 @@
-```markdown
 # Lucian Le
 
-### Systems Architect & Full-Stack Builder
-**Architecting OMNIA - Local-First, Zero-Marginal-Cost Multi-Agent AI Infrastructure**
+> **Systems Architect & Full-Stack Builder**  
+> Crafting resilient software architectures, expressive web products, and real-time visual systems.
 
-`Hanoi, Vietnam` | `Local-First LAN Mesh` | `MCP / JSON-RPC 2.0` | `OMNIA v2.x`
-
----
-
-## About & Engineering Philosophy
-
-I build **open, extensible, and local-first software systems** that remain under developer control without recurring API lock-in. Rather than treating AI agents as isolated chat windows, I design coordinated runtime topologies where local models and frontier agents share persistent state, task queues, and automated verification loops.
-
-* **Dual-Node LAN Orchestration:** Linking `DESKTOP-D9EMEKK` and `AsusVivobook15` over a local mesh to share execution pipelines, background workers, and state endpoints.
-* **Zero-Marginal-Cost & Hybrid Retrieval:** Pairing local **Ollama** inference and `nomic-embed-text` embeddings with **SQLite (WAL + FTS5)** persistence (`omnia.db`, `queue.db`, `handoffs.db`) and frontier agents (`Gemini`, `Claude`, `Codex`) when needed.
-* **Open-Ended Extensibility:** Grounded in a charter-driven core (**AETHEL HEART**) with hot-pluggable modules (`aethel_heart`, `media_studio`), automated health/WAL maintenance, and daily **T5T** (`2 signals, 2 bottlenecks, 1 delta`) calibration loops.
+`Hanoi, Vietnam` · `Systems Architecture` · `Full-Stack Engineering` · `Visual & Interactive Systems`
 
 ---
 
-## OMNIA Architecture
+## About Me
+
+I design and build **clean, adaptable, and high-craft software**—bridging structured systems engineering with expressive product interfaces and procedural visuals. Whether shaping backend APIs, modeling complex domain workflows, or rendering real-time graphics, I focus on clarity, reliability, and room to evolve without rigid lock-in.
+
+- **Systems & Domain Modeling:** Translating ambiguous requirements into clear architectures, relational schemas, and maintainable service boundaries.
+- **End-to-End Product Delivery:** Building responsive web and mobile experiences backed by well-structured APIs, automated tests, and predictable state flows.
+- **Creative & Interactive Craft:** Exploring real-time shaders, procedural motion, and responsive UI systems where engineering meets visual polish.
+
+---
+
+## How I Build
 
 ```text
-+-----------------------------------------------------------------------+
-|                     OMNIA CONTROL CENTER & CONSOLE                    |
-|        Web Console (:3000) | System Tray (Ctrl+Alt+O / Ctrl+Alt+T)    |
-+-----------------------------------+-----------------------------------+
-                                    |
-        +---------------------------+---------------------------+
-        v                                                       v
-+-------------------------------+               +-------------------------------+
-|     MULTI-AGENT ROUTING &     |               |     PERSISTENCE & MEMORY      |
-|       EXECUTION LAYER         |               |          SUBSYSTEM            |
-|                               |               |                               |
-|  * Smart Auto-Router & Cron   |               |  * SQLite WAL + FTS5          |
-|  * MCP Server (JSON-RPC 2.0)  |               |  * nomic-embed-text Hybrid    |
-|  * Gemini / Claude / Codex    |               |  * omnia.db / queue.db /      |
-|  * Local Ollama (:11434)      |               |    handoffs.db                |
-+---------------+---------------+               +---------------+---------------+
-                |                                               |
-                +-----------------------+-----------------------+
-                                        |
-                                        v
-+-----------------------------------------------------------------------+
-|                   LAN MESH, PLUGINS & EDGE EXPOSURE                   |
-|  Dual-PC Mesh (DESKTOP-D9EMEKK <-> AsusVivobook15) | Ports 8765/8766 |
-|  PowerShell Orchestrator (omnia-stack.ps1) | Cloudflare Named Tunnels |
-|  Plugins: Aethel Heart & Media Studio (GLSL / Raymarching / Audio)    |
-+-----------------------------------------------------------------------+
-
+  [ Ambiguous Problem / Domain ]
+                 │
+                 ▼
+  ┌──────────────────────────────┐
+  │   Systems & Data Modeling    │  ──► Clear boundaries, schemas & contracts
+  └──────────────┬───────────────┘
+                 │
+                 ▼
+  ┌──────────────────────────────┐
+  │   Core Services & APIs       │  ──► Predictable state, auth & validation
+  └──────────────┬───────────────┘
+                 │
+                 ▼
+  ┌──────────────────────────────┐
+  │   Interface & Visual Layer   │  ──► Responsive UI, motion & real-time craft
+  └──────────────────────────────┘
 ```
 
-### Core Capabilities
-
-* **Multi-Agent Coordination:** Routes tasks across local Ollama models and external AI agents with runtime concurrency controls, approval gates, and self-healing pipeline loops.
-* **Deterministic State & Context:** Uses SQLite WAL mode with FTS5 full-text and vector hybrid search, ETag-cached context injection (`/api/t5t/context`), and automated `VACUUM` + WAL checkpoints.
-* **Workstation & Visual Extensions:** Integrates Windows background orchestration via PowerShell, global hotkeys, **T5T** daily/weekly rollups, and `media_studio` procedural GLSL shader rendering (`moderngl`, Raymarching SDF, Curl Noise, Cymatics).
+- **Open for Growth:** Favoring modular, extensible structures over brittle abstractions so systems can scale cleanly as needs change.
+- **Balanced Judgment:** Examining trade-offs from both technical and user angles before locking in architecture decisions.
+- **Precision in Execution:** Prioritizing clean code, clear documentation, and verified behavior from local development to production.
 
 ---
 
 ## Tech Stack
 
-| Layer | Technologies |
-| --- | --- |
-| **AI & Agent Orchestration** | `Ollama`, `MCP (JSON-RPC 2.0)`, `Gemini`, `Claude`, `Codex`, `nomic-embed-text` |
-| **Backend & Systems** | `Python` (`Flask`, `pytest`), `PHP` (`Laravel`, `Eloquent`, `JWT`), `Node.js` (`Express`), `PowerShell` |
-| **Data & Storage** | `SQLite` (`WAL`, `FTS5`), Hybrid Vector Search, `Supabase` |
-| **Frontend & UI** | `React`, `Next.js`, `TypeScript`, `Tailwind CSS`, `HTML5 / CSS3`, `Bootstrap` |
-| **Creative & Visualization** | `moderngl`, `GLSL Shaders` (Raymarching SDF, Curl Noise, Cymatics) |
-| **Infrastructure & Tooling** | `Git`, `Docker`, `Cloudflare Tunnels`, `Slack Webhooks`, `Figma`, `StarUML` |
+| Domain | Core Tools & Technologies |
+| :--- | :--- |
+| **Backend & APIs** | `Python` (`Flask`, `pytest`), `PHP` (`Laravel`, `Eloquent`, `JWT`), `Node.js` (`Express`) |
+| **Frontend & UI** | `React`, `Next.js`, `TypeScript`, `React Native`, `Tailwind CSS`, `HTML5 / CSS3`, `Bootstrap` |
+| **Databases & Storage** | `SQLite`, `PostgreSQL / Supabase`, Relational & Schema Modeling |
+| **Graphics & Motion** | `GLSL Shaders`, `moderngl`, Procedural Geometry, Interactive UI Motion |
+| **Workflow & Tooling** | `Git`, `Docker`, `PowerShell`, `Figma`, `StarUML` |
 
 ---
 
 ## Connect
 
-* **GitHub:** `@lucianle-architect`
-* **LinkedIn:** `lucianle-architect`
-* **Email:** `lucianle.architect@gmail.com`
+- **GitHub:** `@lucianle-architect`
+- **LinkedIn:** `lucianle-architect`
+- **Email:** `lucianle.architect@gmail.com`
