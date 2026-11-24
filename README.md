@@ -76,5 +76,3 @@ I build **open, extensible, and local-first software systems** that remain under
 * **GitHub:** `@lucianle-architect`
 * **LinkedIn:** `lucianle-architect`
 * **Email:** `lucianle.architect@gmail.com`
-
-```
