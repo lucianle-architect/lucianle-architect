@@ -1,16 +1,10 @@
-<div align="center">
-
+```markdown
 # Lucian Le
 
 ### Systems Architect & Full-Stack Builder
-**Architecting OMNIA — Local-First, Zero-Marginal-Cost Multi-Agent AI Infrastructure**
+**Architecting OMNIA - Local-First, Zero-Marginal-Cost Multi-Agent AI Infrastructure**
 
-[![Location](https://img.shields.io/badge/Location-Hanoi%2C%20Vietnam-0f172a?style=flat-square)](#)
-[![Architecture](https://img.shields.io/badge/Architecture-Local--First%20LAN%20Mesh-0284c7?style=flat-square)](#omnia-architecture)
-[![Protocol](https://img.shields.io/badge/Protocol-MCP%20%2F%20JSON--RPC%202.0-10b981?style=flat-square)](#omnia-architecture)
-[![Status](https://img.shields.io/badge/OMNIA%20v2.x-Active%20Build-f59e0b?style=flat-square)](#omnia-architecture)
-
-</div>
+`Hanoi, Vietnam` | `Local-First LAN Mesh` | `MCP / JSON-RPC 2.0` | `OMNIA v2.x`
 
 ---
 
@@ -53,3 +47,42 @@ I build **open, extensible, and local-first software systems** that remain under
 |  PowerShell Orchestrator (omnia-stack.ps1) | Cloudflare Named Tunnels |
 |  Plugins: Aethel Heart & Media Studio (GLSL / Raymarching / Audio)    |
 +-----------------------------------------------------------------------+
+
+```
+
+### Core Capabilities
+
+* **Multi-Agent Coordination:** Routes tasks across local Ollama models and external AI agents with runtime concurrency controls, approval gates, and self-healing pipeline loops.
+* **Deterministic State & Context:** Uses SQLite WAL mode with FTS5 full-text and vector hybrid search, ETag-cached context injection (`/api/t5t/context`), and automated `VACUUM` + WAL checkpoints.
+* **Workstation & Visual Extensions:** Integrates Windows background orchestration via PowerShell, global hotkeys, **T5T** daily/weekly rollups, and `media_studio` procedural GLSL shader rendering (`moderngl`, Raymarching SDF, Curl Noise, Cymatics).
+
+---
+
+## Tech Stack
+
+| Layer | Technologies |
+| --- | --- |
+| **AI & Agent Orchestration** | `Ollama`, `MCP (JSON-RPC 2.0)`, `Gemini`, `Claude`, `Codex`, `nomic-embed-text` |
+| **Backend & Systems** | `Python` (`Flask`, `pytest`), `PHP` (`Laravel`, `Eloquent`, `JWT`), `Node.js` (`Express`), `PowerShell` |
+| **Data & Storage** | `SQLite` (`WAL`, `FTS5`), Hybrid Vector Search, `Supabase` |
+| **Frontend & UI** | `React`, `Next.js`, `TypeScript`, `Tailwind CSS`, `HTML5 / CSS3`, `Bootstrap` |
+| **Creative & Visualization** | `moderngl`, `GLSL Shaders` (Raymarching SDF, Curl Noise, Cymatics) |
+| **Infrastructure & Tooling** | `Git`, `Docker`, `Cloudflare Tunnels`, `Slack Webhooks`, `Figma`, `StarUML` |
+
+---
+
+## Connect
+
+* **GitHub:** `@lucianle-architect`
+* **LinkedIn:** `lucianle-architect`
+* **Email:** `lucianle.architect@gmail.com`
+
+```
+
+<ElicitationsGroup message="File README.md đã nằm gọn trên DESKTOP-D9EMEKK, bạn muốn đẩy lên GitHub ngay không?">
+  <Elicitation label="Khởi tạo & push Profile README" query="Hãy khởi tạo git repo tại C:\Users\ADMIN\Documents\GitHub\lucianle-architect và push file README.md lên GitHub qua SSH."/>
+  <Elicitation label="Tạo repo cho OMNIA Control Center" query="Hãy hướng dẫn tôi tạo repository cho dự án OMNIA và cấu hình .gitignore chuẩn cho Python, Node.js và SQLite WAL."/>
+  <Elicitation label="Hoàn thiện hồ sơ LinkedIn" query="Hãy viết lại phần Headline, About và Experience chuẩn tiếng Anh cho Lucian Le để dán lên LinkedIn."/>
+</ElicitationsGroup>
+
+```
